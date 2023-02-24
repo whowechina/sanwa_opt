@@ -1,0 +1,18 @@
+(footprint "SIDE_CONTACT_B" (version 20211014) (generator pcbnew)
+  (layer "F.Cu")
+  (tedit 5B43C79E)
+  (descr "Kingbright, dual LED, 3.5 x 2.8 mm Surface Mount LED Lamp (http://www.kingbrightusa.com/images/catalog/SPEC/AAA3528ESGCT.pdf)")
+  (tags "dual led smd")
+  (attr smd)
+  (fp_text reference "REF**" (at -2.032 -3.302) (layer "F.SilkS") hide
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 1c46f900-abbf-41b3-a7de-598dcae635e9)
+  )
+  (fp_text value "SIDE_CONTACT_B" (at 0.254 3.81) (layer "F.Fab") hide
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 8f1c6920-eb24-4560-a923-2f78bcf2c984)
+  )
+  (fp_rect (start -1.532 -0.9398) (end 1.532 0.9398) (layer "Edge.Cuts") (width 0.12) (fill none) (tstamp 920dfd17-4cb2-4ff6-88d6-e85b76d43c2a))
+  (pad "1" thru_hole roundrect (at -2.032 0) (size 3.81 3.81) (drill oval 2.54 1.905 (offset -0.635 0)) (layers *.Cu *.Mask) (roundrect_rratio 0.25) (tstamp 9ed53331-8e87-42d3-ae91-2bad7e911a5a))
+  (pad "2" thru_hole roundrect (at 2.032 0) (size 3.81 3.81) (drill oval 2.54 1.905 (offset 0.635 0)) (layers *.Cu *.Mask) (roundrect_rratio 0.25) (tstamp 9ea2a7d8-eda1-492a-b351-d05cf769aa6f))
+)
