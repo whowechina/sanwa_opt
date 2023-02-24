@@ -3,6 +3,9 @@ Optical sensor mod for Sanwa buttons (such as Pop'n Music, SDVX or IIDX)
 <img src="docs/img1.jpg" width="50%">  <img src="docs/img2.jpg" width="50%">  
 <img src="docs/img3.jpg" width="50%">
 
+<video src="https://user-images.githubusercontent.com/11623830/221199948-686cd2df-5dc8-4df0-8924-246d5ef216d3.MP4" controls="controls" width="50%">
+</video>
+
 Traditional Sanwa buttons used in arcade use micro switches which wear out through time.
 This project creates a optical sensor module that can replace the whole original lamp/switch holder and the microswitch. It almost never wears out.
 
@@ -31,3 +34,5 @@ You need to print out the holder.stl. A resin printer is perfect for this. I'm n
 The interface to the mainboard is a ZHR-5, which is compatible with Sanwa's own buttons with optical sensors. I haven't made other types of interfaces yet. Maybe I will in the future.
 
 * Good Luck! *
+
+
