@@ -1,3 +1,8 @@
+// big: works for ITR8402 optical sensor
+//bias = 0.35;
+//leg = 11.8;
+
+// small: works for ITR1203 optical sensor
 bias = 0.2;
 leg = 7.8;
 
