@@ -1,5 +1,5 @@
-# sanwa_opt
-Optical sensor mod for Sanwa buttons (such as Pop'n Music, SDVX or IIDX)  
+# Optical sensor mod for Sanwa buttons (such as buttons for Pop'n Music, SDVX or IIDX) 
+
 <img src="docs/img1.jpg" width="50%">  <img src="docs/img2.jpg" width="50%">  
 <img src="docs/img3.jpg" width="50%">
 
