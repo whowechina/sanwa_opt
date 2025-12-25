@@ -14,12 +14,22 @@ I build it originally for my Pop'n Music controller, the Sanwa OBSA-100UMP butto
 ## PCB
 The PCB contains the optical sensor part and the LED lamp part, you need to cut the lamp part from the main board.
 
-For the optical sensor, the PCB supports both ITR1203 (small) and the ITR8402 (big) but I would only suggest to use the ITR1203, small and perfect.
+For the optical sensor, the PCB supports both ITR1203 (inner pins) and discrete IR908-7C and PT908-7C pair (the outer pins). If you use discreate IR pairs, note that the IR emitter IR908-7C should be at the "U1" sign side, PT908-7C phototransistor should be at the opposite side.
 
-* R1 is the current limiter for the emitter, 1206, 500ohm to 1K is fine.
-* R2 is for pulling down the out level, 1206 or 0805, 10K is fine.
+* R1 is the current limiter for the emitter, 1206, 220 to 500ohm, depending on supply voltage. See notes below for calculation.
+* R2 is for pulling down the out level, 1206 or 0805, 2K to 3K ohm, make sure the out level is high enough when button is not pressed (optical switch is on), if it's not high enough, increase R2 value.
 * R3 is the current limiter for the LED lamp, depending on the brightness of the LED, 1206, 50ohm to 200ohm is fine.
 * For the LED, choose 2835 or 3528 3V high brightness LEDs.
+
+Notes:
+* Here's how you can calculate the LED current limiter R3:
+  * R3 = (V_supply - V_F) / I
+  * LED V_F is usually around 3V. LED's current is usually 20mA for high brightness LEDs.
+  * So R3 = (5V - 3V) / 0.02A = 100 ohm for a 5V supply.
+* Same formular for the IR emitter current:
+  * I = (V_supply - Vf_IR) / R1
+  * IR emitter Vf is usually around 1.2V. IR emitter's current is usually 10 to 20mA.
+  * So R1 = (5V - 1.2V) / 0.02A = 190 ohm, you can use a standard 220 ohm resistor.
 
 ## Holder
 You need to print out the holder.stl. A resin printer is perfect for this. I'm not sure if an FDM printer with PLA has enough accuracy to do the work.
